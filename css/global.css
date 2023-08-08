@@ -13,3 +13,8 @@
 h1{
     font-family: 'Archivo', sans-serif;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
