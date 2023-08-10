@@ -19,10 +19,11 @@
     --form-background-transparent-color: #2f3133de;
     --footer-light-text-color: #ffffffd1;
     --footer-background-color: #303133;
+    --footer-title-text: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Archivo', sans-serif;
 }
 
