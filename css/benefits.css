@@ -1,0 +1,36 @@
+.benefits{
+    background-color: #e5e9e2;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.benefits__cards {
+    background-color: #e5e9e2;
+    padding: 20px;
+}
+.benefits__cards-item {
+    height: 200px;
+    background-color: #fff;
+    padding: 20px;   
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+@media (min-width: 600px) {
+    .benefits__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media (min-width: 900px) {
+    .benefits__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    .benefits__cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

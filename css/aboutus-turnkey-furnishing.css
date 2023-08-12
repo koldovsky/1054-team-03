@@ -1,0 +1,64 @@
+.aboutus-turnkey-furnishing {
+    padding: 90px 24px;
+    background-color: var(--form-light-text-color);
+}
+
+.aboutus-turnkey-furnishing__header {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.aboutus-turnkey-furnishing__number {
+    font-size: 11px;
+    color: var(--paragraph-color);
+    font-weight: bold;
+}
+
+.aboutus-turnkey-furnishing__title {
+    text-align: center;
+    font-size: 34px;
+    padding: 20px;
+    color: var(--title-color);
+}
+
+.aboutus-turnkey-furnishing__description {
+    font-size: 18px;
+    padding: 10px;
+    color: var(--subtitle-color);
+    font-weight: bold;
+}
+
+.aboutus-turnkey-furnishing__laptop-example, .aboutus-turnkey-furnishing__bedroom-example, .aboutus-turnkey-furnishing__living-room-example {
+    background-color: var(--footer-light-text-color);
+    padding: 39px 43px;
+}
+
+.laptop-example__title, .bedroom-example__title, .living-room-example__rooms-benefits {
+    font-size: 22px;
+}
+
+.laptop-example__description, .bedroom-example__description, .living-room-example__description {
+    color: var(--paragraph-color);
+    margin-top: 20px;
+    
+}
+
+.laptop-example__rooms-benefits, .bedroom-example__rooms-benefits, .living-room-example__rooms-benefits {
+    margin-top: 15px;
+    color: var(--subtitle-color);
+    list-style-type: none;
+}
+
+.laptop-example__list-item, .bedroom-example__list-item, .living-room-example__list-item {
+    font-size: 16px;
+    padding: 5px;
+    color: var(--subtitle-color);
+}
+
+.laptop-example__list-item::before, .bedroom-example__list-item::before, .living-room-example__list-item::before {
+    content: url(../img/list-item-turnkey.svg);
+    margin-right: 10px;
+}
