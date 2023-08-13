@@ -1,9 +1,4 @@
-.header {
-    background-color: #F7F4F0;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 a {
     text-decoration: none;
@@ -13,10 +8,57 @@ ul {
     list-style: none;
 }
 
+
+.header {
+    background-color: #F7F4F0;
+    margin: 0 auto;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
 .header__menu-link{
-        font-family: 'Open Sans', sans-serif;
-        color: var(--paragraph-color);
-        text-transform: uppercase;
-        font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--paragraph-color);
+    text-transform: uppercase;
+    font-weight: 700;
         
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    
+}
+
+
+.header__menu  {
+    display: flex;
+    align-items: center;
+    margin-left: 222px;
+}
+
+.header__menu-item {
+    margin-right: 40px;
+}
+
+.header__menu-item:last-child {
+    margin: 0;
+    /* Очистив на останьому елементі <li> margin в 40 пікселів */
+}
+
+
+.header__social-link {
+    margin-left: auto;
+}
+.header__social-list {
+    display: flex;
+    gap: 2px;
 }
