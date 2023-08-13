@@ -72,7 +72,7 @@
     color: var(--light-text-accent-color);
 }
 
-.wrapper {
+.passion-innovations__links-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
@@ -129,7 +129,7 @@
         font-size: 33px;
     }
 
-    .wrapper {
+    .passion-innovations__links-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
@@ -149,7 +149,7 @@
         opacity: 0;
     }
 
-    .passion-innovations__cards-item .card-content > * {
+    .passion-innovations__cards-item .card-content>* {
         transform: translateY(20px);
         transition: transform 0.25s;
     }
@@ -158,7 +158,7 @@
         opacity: 1;
     }
 
-    .passion-innovations__cards-item .card-content:hover > *{
+    .passion-innovations__cards-item .card-content:hover>* {
         transform: translateY(0px);
     }
 
