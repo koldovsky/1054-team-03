@@ -1,5 +1,37 @@
 .passion-innovations {
-    margin: 90px 0;    
+    margin: 90px 0;
+}
+
+.passion-innovations__number {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--subtitle-color);
+    text-align: center;
+}
+
+.passion-innovations__title {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--title-color);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.passion-innovations__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--subtitle-color);
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+.passion-innovations__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin: 0 24px;
 }
 
 .passion-innovations__cards-item {
@@ -37,4 +69,44 @@
     text-align: center;
     margin-top: 30px;
     color: var(--light-text-accent-color);
+}
+
+.passion-innovations__links ul {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.passion-innovations__links-item {
+    font-size: 19px;
+    font-weight: 700;
+
+}
+
+.passion-innovations__links-item a {
+    text-decoration: none;
+    color: var(--link-text-color);
+}
+
+.passion-innovations__description {
+    margin: 0 24px;
+}
+
+.passion-innovations__description-text {
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+.passion-innovations__description-link {
+    padding-top: 30px;
+}
+
+.passion-innovations__description-link a {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--link-text-color);
 }
