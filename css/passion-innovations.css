@@ -1,52 +1,165 @@
 .passion-innovations {
-    padding: 90px 0;
-}
-
-.passion-innovations__info {
-    text-align: center;
-    margin-bottom: 40px;
+    margin: 90px 0;
 }
 
 .passion-innovations__number {
-    color: var(--subtitle-color);
     font-size: 11px;
     font-weight: 700;
-    text-align: center;
     letter-spacing: 3px;
+    color: var(--subtitle-color);
+    text-align: center;
 }
 
 .passion-innovations__title {
-    color: var(--title-color);
     font-size: 34px;
     font-weight: 700;
+    color: var(--title-color);
     text-align: center;
+    margin-top: 20px;
 }
 
 .passion-innovations__subtitle {
-    color: var(--subtitle-color);
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--subtitle-color);
     text-align: center;
+    margin: 30px 0 50px 0;
 }
 
-.card-content {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/functionality.jpg);
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
+.passion-innovations__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin: 0 24px;
+}
+
+.passion-innovations__cards-item {
+    position: relative;
+}
+
+.card__image {
+    display: block;
+    width: 100%;
+}
+
+.passion-innovations__cards-item .card-content {
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s;
 }
 
 .card__title {
-    color: var(--footer-title-text);
     font-size: 30px;
-    font-weight: 700;
-    text-align: center;
+    font-weight: 400;
+    color: var(--footer-title-text);
 }
 
 .card__text {
-    color: #ffffffde;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+    margin-top: 30px;
+    color: var(--light-text-accent-color);
+}
+
+.passion-innovations__links-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.passion-innovations__links ul {
+    letter-spacing: 1px;
+}
+
+.passion-innovations__links-item {
+    font-size: 19px;
+    font-weight: 700;
+
+}
+
+.passion-innovations__links-item a {
+    text-decoration: none;
+    color: var(--link-text-color);
+}
+
+.passion-innovations__description {
+    margin: 0 24px;
+}
+
+.passion-innovations__description-text {
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+.passion-innovations__description-link {
+    padding-top: 30px;
+}
+
+.passion-innovations__description-link a {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--link-text-color);
+}
+
+@media (min-width: 768px) {
+    .passion-innovations__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .passion-innovations__title {
+        font-size: 41px;
+    }
+
+    .card__title {
+        font-size: 33px;
+    }
+
+    .passion-innovations__links-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .passion-innovations__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .passion-innovations__title {
+        font-size: 48px;
+    }
+
+    .passion-innovations__cards-item .card-content {
+        opacity: 0;
+    }
+
+    .passion-innovations__cards-item .card-content>* {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .passion-innovations__cards-item .card-content:hover {
+        opacity: 1;
+    }
+
+    .passion-innovations__cards-item .card-content:hover>* {
+        transform: translateY(0px);
+    }
+
 }
