@@ -1,5 +1,5 @@
 .passion-innovations {
-    margin: 90px 0;
+    margin: auto;
 }
 
 .passion-innovations__number {
@@ -76,6 +76,10 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
+}
+
+.passion-innovations__links {
+    display: block;
 }
 
 .passion-innovations__links ul {
