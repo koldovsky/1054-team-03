@@ -5,7 +5,6 @@
 
 .aboutus-turnkey-furnishing__header {
     display: flex;
-    max-width: 1200px;
     align-items: center;
     flex-direction: column;
     padding: 24px;
@@ -31,34 +30,34 @@
     font-weight: bold;
 }
 
-.aboutus-turnkey-furnishing__laptop-example, .aboutus-turnkey-furnishing__bedroom-example, .aboutus-turnkey-furnishing__living-room-example {
+.examples {
     background-color: var(--footer-light-text-color);
     padding: 39px 43px;
 }
 
-.laptop-example__title, .bedroom-example__title, .living-room-example__rooms-benefits {
+.turnkey-titles {
     font-size: 22px;
 }
 
-.laptop-example__description, .bedroom-example__description, .living-room-example__description {
+.turnkey-descriptions {
     color: var(--paragraph-color);
     margin-top: 20px;
     
 }
 
-.laptop-example__rooms-benefits, .bedroom-example__rooms-benefits, .living-room-example__rooms-benefits {
+.turnkey-examples {
     margin-top: 15px;
     color: var(--subtitle-color);
     list-style-type: none;
 }
 
-.laptop-example__list-item, .bedroom-example__list-item, .living-room-example__list-item {
+.turnkey-examples__card {
     font-size: 16px;
     padding: 5px;
     color: var(--subtitle-color);
 }
 
-.laptop-example__list-item::before, .bedroom-example__list-item::before, .living-room-example__list-item::before {
+.turnkey-examples__card::before {
     content: url(../img/list-item-turnkey.svg);
     margin-right: 10px;
 }
