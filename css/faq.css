@@ -24,3 +24,8 @@
     font-size: 14px;
     color: var(--link-text-color);
 }
+
+.faq-accordion__text {
+    font-size: 14px;
+    color: var(--paragraph-color);
+}
