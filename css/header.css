@@ -1,11 +1,10 @@
 
 
-a {
+.header__nav a {
     text-decoration: none;
 }
-/* замінити селектори тегу на селектори класу */
 
-ul {
+.header__nav ul {
     list-style: none;
 }
 
