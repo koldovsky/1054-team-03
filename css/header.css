@@ -3,6 +3,7 @@
 a {
     text-decoration: none;
 }
+/* замінити селектори тегу на селектори класу */
 
 ul {
     list-style: none;
