@@ -40,9 +40,9 @@
 }
 
 .news-articles__cards-item {
-    border: 1px solid #ccc;
+    border: 1px solid var(--link-text-color);
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--footer-title-text);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
 }
