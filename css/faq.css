@@ -30,6 +30,10 @@
     color: var(--paragraph-color);
 }
 
+.faq-features__list ul {
+    list-style: none;
+}
+
 .faq-features__item {
     display: flex;
 }
