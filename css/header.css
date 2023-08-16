@@ -1,49 +1,108 @@
-.header__nav a {
-    text-decoration: none;
+header {
+    background-color: #F7F4F0;
+    top: 0;
+    width: 100%;
 }
-.header__nav ul {
+
+.header__link-list,
+.sociallink__list {
     list-style: none;
 }
-.header {
-    background-color: #F7F4F0;
-    margin: 0 auto;
-    /* padding-left: 15px;
-    padding-right: 15px; */
-}
-.header__menu-link{
-    font-family: 'Open Sans', sans-serif;
-    color: var(--paragraph-color);
+
+.header__menu-link {
+    text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700;     
+    color: var(--paragraph-color);
+    font-size: 0.68rem;
+    font-weight: 700;
 }
-.header__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1230px;
-    margin-left: auto;
-    margin-right: auto;
+
+.header__main-container {
+    max-width: 1200px;
+    margin: auto;
     padding-top: 20px;
     padding-right: 15px;
     padding-bottom: 20px;
     padding-left: 15px;
 }
-.header__menu  {
+
+.header__nav-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 222px;
 }
-.header__menu-item {
-    margin-right: 40px;
+
+.header__logo-image {
+    width: 106px;
 }
-.header__menu-item:last-child {
-    margin: 0;
-    /* Очистив на останьому елементі <li> margin в 40 пікселів */
+
+.sociallink__image {
+    width: 26px;
 }
-.header__social-link {
-    margin-left: auto;
-}
-.header__social-list {
+
+.header__link-list {
     display: flex;
-    gap: 2px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.sociallink__list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+@media (max-width: 1000px) {
+    .header__link-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 800px) {
+    .header__socaillink-container {
+        visibility: hidden;
+    }
+
+    .header__nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__logo-container {
+        margin-bottom: 20px;
+    }
+
+    .header__link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__socaillink-container {
+        visibility: hidden;
+    }
+
+    .header__nav-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .header__logo-container {
+        margin-bottom: 20px;
+    }
+
+    .header__link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
 }
