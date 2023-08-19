@@ -1,6 +1,10 @@
 .faq {
     background-color: var(--faq-background-color);
     padding: 90px 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 .faq__tittle {
@@ -41,4 +45,30 @@
 .faq-features__description {
     font-size: 16px;
     color: var(--paragraph-color);
+}
+
+@media (min-width: 768px) {
+    .faq {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .faq-header {
+        grid-column: 1;
+        grid-row: 1; 
+    }
+
+    .faq-contact {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .faq-accordion {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .faq-features {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
