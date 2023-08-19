@@ -8,7 +8,7 @@
 }
 
 .faq__tittle {
-    font-size: 34px;
+    font-size: 48px;
     font-weight: 700;
     color: var(--title-color);
 }
@@ -42,6 +42,12 @@
     display: flex;
 }
 
+.faq-features__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
 .faq-features__description {
     font-size: 16px;
     color: var(--paragraph-color);
@@ -54,7 +60,7 @@
 
     .faq-header {
         grid-column: 1;
-        grid-row: 1; 
+        grid-row: 1;
     }
 
     .faq-contact {
@@ -63,12 +69,12 @@
     }
 
     .faq-accordion {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 2;
     }
 
     .faq-features {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 2;
     }
 }
