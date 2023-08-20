@@ -48,3 +48,19 @@ function Max(list) {
     }   
     return list[0];
 }
+
+// Find min value/index
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+
+function findMinValueOrIndex(arr, toReturn){
+    let minVal = arr[0];
+    let minInd = 0;
+    
+    for (let i = 0; i < arr.length-1; i++) {
+       if(minVal > arr[i+1]){
+            minVal = arr[i+1];
+            minInd = i+1;   
+       }
+    }   
+    return toReturn === "value" ? minVal : minInd;    
+}
