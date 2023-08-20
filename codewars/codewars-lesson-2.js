@@ -64,3 +64,13 @@ function findMinValueOrIndex(arr, toReturn){
     }   
     return toReturn === "value" ? minVal : minInd;    
 }
+
+// Wolf & Sheep
+// https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+
+function warnTheSheep(sheepArr) {
+    let wolfPosition = sheepArr.indexOf("wolf") + 1;   
+    return (( sheepArr.length) === wolfPosition ) ?
+        "Pls go away and stop eating my sheep" :
+        `Oi! Sheep number ${sheepArr.length - wolfPosition}! You are about to be eaten by a wolf!`;
+}
