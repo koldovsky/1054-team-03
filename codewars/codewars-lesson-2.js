@@ -74,3 +74,10 @@ function warnTheSheep(sheepArr) {
         "Pls go away and stop eating my sheep" :
         `Oi! Sheep number ${sheepArr.length - wolfPosition}! You are about to be eaten by a wolf!`;
 }
+
+// Double all array elements
+// https://www.codewars.com/kata/57f781872e3d8ca2a000007e
+
+function maps(x){
+    return x.map(element => element *=2);
+  }
