@@ -6,7 +6,7 @@ function stringToStringArray(string) {
 }
 
 // DNA to RNA converter
-https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+// https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 function dnaToRnaConverter(dna){
     if(dna.length === 0 || dna.indexOf("T") === -1)
@@ -18,4 +18,33 @@ function dnaToRnaConverter(dna){
             dnaAsArray[i] = "U";
     }
     return dnaAsArray.join("");
+}
+
+// Return min/max el. of list
+// https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+
+function Min(list) {   
+    for (let i = 0; i < list.length - 1; i++) {
+        for (let j = 0; j < list.length - i - 1; j++) {
+            if (list[j] > list[j + 1]) {
+                let temp = list[j];
+                list[j] = list[j + 1];
+                list[j + 1] = temp;
+            }
+        }
+    }
+    return list[0];
+}
+
+function Max(list) {    
+    for (let i = 0; i < list.length - 1; i++) {
+        for (let j = 0; j < list.length - i - 1; j++) {
+            if (list[j] < list[j + 1]) {
+                let temp = list[j];
+                list[j] = list[j + 1];
+                list[j + 1] = temp;
+            }
+        }
+    }   
+    return list[0];
 }
