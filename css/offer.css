@@ -1,0 +1,19 @@
+.offer__number{
+    color: var(--subtitle-color);
+}
+
+.offer__container{
+    display: flex;
+   justify-content: center;
+}
+
+.offer-container__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 615px;
+}
+
+.offer-container__product-categories{
+    display: flex;
+}
