@@ -17,6 +17,7 @@
     font-size: 18px;
     font-weight: 600;
     color: var(--subtitle-color);
+    padding-top: 25px;
 }
 
 .faq-contact__text {
@@ -51,6 +52,10 @@
 .faq-features__description {
     font-size: 16px;
     color: var(--paragraph-color);
+}
+
+.faq-features__img {
+    width: 26px;
 }
 
 @media (min-width: 768px) {
