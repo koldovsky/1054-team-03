@@ -41,6 +41,7 @@
 
 .faq-features__item {
     display: flex;
+    padding-top: 40px;
 }
 
 .faq-features__title {
@@ -55,7 +56,8 @@
 }
 
 .faq-features__img {
-    width: 26px;
+    width: 30px;
+    margin-right: 20px;
 }
 
 @media (min-width: 768px) {
