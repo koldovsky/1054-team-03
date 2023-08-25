@@ -31,6 +31,7 @@ function renderExample(examples) {
     const examplesContainer = document.querySelector('.aboutus-turnkey-furnishing__examples');
     examplesContainer.innerHTML = '';
     for (const example of examples) {
+        const benefitsList = example.benefits.map(benefit => `<li class="benefits-examples__card">${benefit}</li>`).join('');
         examplesContainer.innerHTML += 
             `<div class="aboutus-turnkey-furnishing__furnishing-examples">
                 <img src="${example.image}" alt="${example.alt}" class="furnishing-examples__picture">
@@ -38,9 +39,7 @@ function renderExample(examples) {
                     <h3 class="furnishing-examples__turnkey-titles">${example.name}</h3>
                     <p class="furnishing-examples__turnkey-descriptions">${example.description}</p>
                     <ul class="furnishing-examples__benefits-examples">
-                        <li class="benefits-examples__card">${example.benefits[0]}</li>
-                        <li class="benefits-examples__card">${example.benefits[1]}</li>
-                        <li class="benefits-examples__card">${example.benefits[2]}</li>
+                        ${benefitsList}
                     </ul>
                 </article>
             </div>`
