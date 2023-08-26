@@ -1,19 +1,97 @@
-.offer__number{
+.offer {
+    padding: 115px 0px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.offer__number {
+    color: var(--subtitle-color);
+    font-size: 14px;
+}
+
+.offer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.offer-container__description {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.offer-container__description-title {
+    font-size: 2.5em;
+    color: var(--title-color);
+}
+
+.offer-container__description-upper-text {
+    font-size: 18px;
     color: var(--subtitle-color);
 }
 
-.offer__container{
-    display: flex;
-   justify-content: center;
+.offer-container__description-lower-text {
+    font-size: 16px;
+    color: var(--paragraph-color);
 }
 
-.offer-container__description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 615px;
+.offer-container__product-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.offer-container__product-categories{
-    display: flex;
+.product-categories__item {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    justify-items: center;
+    align-items: end;
+}
+
+.product-categories__item-logo {
+    width: 50px;
+}
+
+.product-categories__item-name {
+    color: var(--subtitle-color);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 966px) {
+    .offer-container__description {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        padding-right: 20px;
+    }
+
+    .product-categories__item {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        justify-items: center;
+        align-items: end;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .product-categories__item-name {
+        color: var(--subtitle-color);
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .offer {
+        padding-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .offer__container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .offer-container__product-categories {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
