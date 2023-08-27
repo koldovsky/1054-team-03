@@ -32,50 +32,49 @@
     font-weight: 600;
     color: var(--link-text-color);
 }
+
 .faq-accordion {
     display: block;
     flex-direction: column;
     line-height: 25px;
-  }
+}
 
-  .faq-accordion__item {
+.faq-accordion__item {
     height: auto;
     margin-top: 20px;
     border-bottom: solid 1px var(--paragraph-color);
     padding-bottom: 20px;
     margin-right: 20px;
-  }
+}
 
-  .faq-accordion__title {
+.faq-accordion__title {
     font-size: 19px;
     font-weight: 600;
     font-family: 'Archivo', sans-serif;
     color: var(--title-color);
-    line-height: 30px;
     display: flex;
     align-items: center;
 }
 
-.faq-accordion__body {
+.faq-accordion__text {
     font-size: 16px;
     color: var(--paragraph-color);
     padding-top: 20px;
-    line-height: 25px;
 }
 
 .faq-accordion__title::after {
     content: "+";
     margin-left: auto;
-  }
-  
-  .faq-accordion__item[open] .faq-accordion__title::after {
+}
+
+.faq-accordion__item[open] .faq-accordion__title::after {
     content: "-";
     margin-left: auto;
-  }
-  
-  .faq-accordion__item[open] .faq-accordion__body {
+}
+
+.faq-accordion__item[open] .faq-accordion__text {
     display: block;
-  }
+}
 
 .faq-features__list ul {
     list-style: none;
