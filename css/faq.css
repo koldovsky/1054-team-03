@@ -41,7 +41,7 @@
   .faq-accordion__item {
     height: auto;
     margin-top: 20px;
-    border-bottom: solid 1px var(--subtitle-color);
+    border-bottom: solid 1px var(--paragraph-color);
     padding-bottom: 20px;
     margin-right: 20px;
   }
@@ -49,6 +49,7 @@
   .faq-accordion__title {
     font-size: 19px;
     font-weight: 600;
+    font-family: 'Archivo', sans-serif;
     color: var(--title-color);
     line-height: 30px;
     display: flex;
