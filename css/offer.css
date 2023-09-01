@@ -91,27 +91,6 @@
     }
 }
 
-@media screen and (max-width: 830px) {
-    /* .product-categories__item {
-        display: grid;
-        grid-template-rows: auto auto;
-        justify-items: center;
-        align-items: end;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .product-categories__item-name {
-        align-self: end;
-    } */
-}
-
-@media screen and (max-width: 827px) {
-    .upper{
-        margin-bottom: -15px;
-    }
-}
-
 @media screen and (max-width: 767px) {
 
     .offer__container {
