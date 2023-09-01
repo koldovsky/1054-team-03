@@ -1,4 +1,4 @@
 document.addEventListener('partialsLoaded', () => {
-    import('./numbers');
+    import('./num.js');
     import('./best-selling.js');
 });
