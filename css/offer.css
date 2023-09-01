@@ -6,7 +6,7 @@
 
 .offer__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 55%;
     grid-template-rows: auto auto;
 }
 
@@ -92,7 +92,7 @@
 }
 
 @media screen and (max-width: 830px) {
-    .product-categories__item {
+    /* .product-categories__item {
         display: grid;
         grid-template-rows: auto auto;
         justify-items: center;
@@ -103,6 +103,12 @@
 
     .product-categories__item-name {
         align-self: end;
+    } */
+}
+
+@media screen and (max-width: 827px) {
+    .upper{
+        margin-bottom: -15px;
     }
 }
 
