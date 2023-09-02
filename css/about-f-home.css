@@ -1,0 +1,214 @@
+.about-f-home {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 25px 120px 25px;
+}
+
+.about-f-home__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 0 50px 0;
+}
+
+.about-f-home__img {
+    padding: 0 15px;
+}
+
+.about-f-home-content {
+    padding: 0 15px;
+    display: grid;
+    align-items: end;
+}
+
+.content__number {
+    color: var(--subtitle-color);
+    font-size: 12px;
+    align-self: start;
+    margin-top: 20px;
+}
+
+.content__title {
+    font-size: 48px;
+    color: var(--title-color);
+    align-self: start;
+}
+
+.content__subtitle {
+    font-size: 18px;
+    color: var(--subtitle-color);
+    align-self: start;
+}
+
+.content__text {
+    font-size: 16px;
+    color: var(--paragraph-color);
+    align-self: start;
+}
+
+.read-more {
+    align-self: start;
+    max-width: 120px;
+    max-height: 46px;
+    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 13px 0 13px 0;
+    text-decoration: none;
+    color: var(--form-light-text-color);
+    background-color: var(--basic-button-color);
+    transition: background-color 1s;
+}
+
+.read-more:hover {
+    background-color: var(--button-hover-color);
+    transition: 0.7s;
+}
+
+.background-img {
+    background-image: url(/img/about-f-home/furniture-catalog-background.svg);
+}
+
+.furniture-catalog-downloader__container {
+    min-width: 250px;
+    height: 305px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.downloader-container__title {
+    font-size: 36px;
+    color: var(--title-color);
+    text-align: center;
+}
+
+.downloader-container__subtitle {
+    font-size: 18px;
+    color: var(--subtitle-color);
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 180px;
+    height: 3em;
+    border: 2px solid;
+    border-color: var(--button-hover-color);
+    color: var(--button-hover-color);
+    text-decoration: none;
+    transition: background-color 0.4s;
+}
+
+.download-btn:hover {
+    background-color: var(--button-hover-color);
+    color: var(--light-text-accent-color);
+
+    & .download-btn-logo {
+        filter: invert(100%) sepia(3%) saturate(3586%) hue-rotate(337deg) brightness(95%) contrast(94%);
+    }
+}
+
+.download-btn-logo {
+    filter: invert(67%) sepia(8%) saturate(575%) hue-rotate(67deg) brightness(90%) contrast(85%);
+}
+
+@media screen and (max-width: 999px) {
+    .content__title {
+        margin-bottom: 15px;
+    }
+
+    .content__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .content__text {
+        margin: 15px 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .about-f-home {
+        padding-top: 100px;
+    }
+
+    .content__title {
+        margin-bottom: 15px;
+    }
+
+    .content__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .content__text {
+        margin: 10px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .about-f-home {
+        padding-top: 80px;
+    }
+
+    .content__title {
+        margin-bottom: 15px;
+    }
+
+    .content__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .content__text {
+        margin: 15px 0 25px 0;
+    }
+
+    .downloader-container__title {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-f-home {
+        padding-top: 70px;
+    }
+
+    .about-f-home__container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-f-home {
+        padding-top: 65px;
+    }
+
+    .about-f-home__img {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-f-home {
+        padding-top: 60px;
+    }
+
+    .about-f-home__img {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .downloader-container__title {
+        font-size: 30px;
+    }
+}
