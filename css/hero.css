@@ -1,16 +1,14 @@
 .hero {
-    text-align: center;
     background-image: url(../img/hero.png);
     background-size: cover;
+    background-position: center;
     height: 100vh;
-    
-
-.grid-hero {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
 }
 
-}
 .hero__number {
     padding-top: 110px;
     font-family: 'Open Sans', sans-serif;
@@ -18,6 +16,7 @@
     font-weight: 700;
     color: var(--paragraph-color);
 }
+
 .hero-title {
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
@@ -27,11 +26,13 @@
 .accent-letter {
     color: var(--link-text-color);
 }
+
 .hero__action {
     color: var(--subtitle-color);
     font-weight: 600;
     font-size: 18px;
 }
+
 .hero__action-link {
     text-decoration: none;
     color: var(--link-text-color);
