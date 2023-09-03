@@ -26,6 +26,7 @@
     --faq-background-color: #e5e9e2; 
     --home-url-color-for-about-us-page: #f7f4f094;
     --passion-innovations-bg-color: #f8fafc;
+    --tabs-color: #bac5b9;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -47,5 +48,5 @@ img {
     border: none;
     background-color: var(--discount-text-color);
     height: 1px;
-    width: 80%;
+    width: 100%;
 }
