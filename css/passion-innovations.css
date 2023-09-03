@@ -2,6 +2,10 @@
     margin: auto;
 }
 
+.passion-innovations__info {
+    margin-top: 90px;
+}
+
 .passion-innovations__number {
     font-size: 11px;
     font-weight: 700;
@@ -78,12 +82,13 @@
     gap: 50px;
 }
 
-.passion-innovations__links {
-    display: block;
-}
+/* .passion-innovations__links {
+    display: inline-block;
+} */
 
 .passion-innovations__links ul {
     letter-spacing: 1px;
+    list-style: none;
 }
 
 .passion-innovations__links-item {
@@ -175,17 +180,18 @@ Numbers
 */
 
 .numbers-starter {
-    padding: 5rem 0;
-    width: 90vw;
-    max-width: 1170px;
-    margin: 0 auto;
-    display: grid;
-    gap: 2rem;
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
     .numbers-starter {
         grid-template-columns: 1fr 1fr;
+        padding: 5rem 0;
+        width: 90vw;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: grid;
+        gap: 2rem;
     }
 }
 
@@ -196,9 +202,9 @@ Numbers
 }
 
 .numbers-starter__item {
-    background: var(--white);
+    background: var(--passion-innovations-bg-color);
     padding: 1rem 2rem;
-    border-radius: var(--borderRadius);
+    border-radius: 4px;
     border-bottom: 4px solid transparent;
 }
 
