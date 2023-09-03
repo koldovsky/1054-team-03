@@ -1,0 +1,32 @@
+.new-products {
+    margin: auto;
+}
+
+.new-products__info {
+    margin-top: 90px;
+}
+
+.new-products__number {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--subtitle-color);
+    text-align: center;
+}
+
+.new-products__title {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--title-color);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.new-products__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--subtitle-color);
+    text-align: center;
+    margin: 30px 0 50px 0;
+}

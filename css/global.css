@@ -42,3 +42,10 @@ img {
     max-width: 1200px;
     margin: auto;
 }
+
+.special-divider {
+    border: none;
+    background-color: var(--discount-text-color);
+    height: 1px;
+    width: 80%;
+}
