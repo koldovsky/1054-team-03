@@ -1,4 +1,6 @@
 .benefits{
+    margin: auto;
+    min-width: 320px;
     text-align: center;
     padding: 90px 24px;
     background-color: var(--benefits-background-color);
@@ -69,14 +71,14 @@
     padding: 20px;
     margin: 5px;  
 }
-@media (min-width: 350px) {
+@media (min-width: 320px) {
     .benefits__cards {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
     }
 }    
-@media (min-width: 700px) {
+@media (min-width: 768px) {
     .benefits__cards {
         display: grid;
         grid-template-columns: 1fr 1fr;

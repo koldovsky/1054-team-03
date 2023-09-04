@@ -22,7 +22,11 @@
     --form-background-transparent-color: #2f3133de;
     --footer-light-text-color: #ffffffd1;
     --footer-background-color: #303133;
-    --footer-title-text: #ffffff; 
+    --footer-title-text: #ffffff;
+    --faq-background-color: #e5e9e2; 
+    --home-url-color-for-about-us-page: #f7f4f094;
+    --passion-innovations-bg-color: #f8fafc;
+    --tabs-color: #bac5b9;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -38,4 +42,11 @@ img {
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+.special-divider {
+    border: none;
+    background-color: var(--discount-text-color);
+    height: 1px;
+    width: 100%;
 }

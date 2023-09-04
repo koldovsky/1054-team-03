@@ -1,0 +1,42 @@
+.about-us-hero {
+    display: flex;
+    padding: 50px;
+    height: 230px;
+    width: 100%;
+    background-color: var(--button-hover-color);
+    font-weight: bold;
+}
+
+.about-us-hero__content {
+    text-align: center;
+}
+
+.about-us-hero__title {
+    font-size: 34px;
+    padding: 0px 0 20px 0;
+    color: var(--footer-title-text);
+}
+
+.about-us-hero__home-url {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--home-url-color-for-about-us-page);
+}
+
+.about-us-hero__current-page {
+    font-size: 14px;
+    text-decoration: underline;
+    color: var(--form-light-text-color);
+}
+
+@media(min-width: 768px) {
+    .about-us-hero__title {
+        font-size: 41px;
+    }
+}
+
+@media(min-width: 992px) {
+    .about-us-hero__title {
+        font-size: 48px;
+    }
+}

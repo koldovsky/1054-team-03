@@ -2,6 +2,10 @@
     margin: auto;
 }
 
+.passion-innovations__info {
+    margin-top: 90px;
+}
+
 .passion-innovations__number {
     font-size: 11px;
     font-weight: 700;
@@ -78,12 +82,13 @@
     gap: 50px;
 }
 
-.passion-innovations__links {
-    display: block;
-}
+/* .passion-innovations__links {
+    display: inline-block;
+} */
 
 .passion-innovations__links ul {
     letter-spacing: 1px;
+    list-style: none;
 }
 
 .passion-innovations__links-item {
@@ -166,4 +171,63 @@
         transform: translateY(0px);
     }
 
+}
+
+/*
+=============== 
+Numbers 
+===============
+*/
+
+.numbers-starter {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .numbers-starter {
+        grid-template-columns: 1fr 1fr;
+        padding: 5rem 0;
+        width: 90vw;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: grid;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .numbers-starter {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.numbers-starter__item {
+    background: var(--passion-innovations-bg-color);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border-bottom: 4px solid transparent;
+}
+
+.numbers-starter__item span {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.numbers-starter__text {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.numbers-starter__item:nth-of-type(1) {
+    border-bottom-color: #f59e0b;
+}
+
+.numbers-starter__item:nth-of-type(2) {
+    border-bottom-color: #14b8a6;
+}
+
+.numbers-starter__item:nth-of-type(3) {
+    border-bottom-color: #a855f7;
 }

@@ -1,31 +1,136 @@
 .faq {
-    background-color: #e5e9e2;
-    padding: 90px 0px;
+    background-color: var(--faq-background-color);
+    padding: 90px 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-.faq__tittle {
+.faq__title {
     font-size: 34px;
     font-weight: 700;
     color: var(--title-color);
+    padding-top: 40px;
 }
 
 .faq__description {
     font-size: 18px;
     font-weight: 600;
     color: var(--subtitle-color);
+    padding-top: 25px;
 }
 
 .faq-contact__text {
     font-size: 16px;
     color: var(--paragraph-color);
+    padding: 40px 0 20px 0;
 }
 
 .faq-contact__link {
     font-size: 14px;
+    font-weight: 600;
     color: var(--link-text-color);
 }
 
+.faq-accordion {
+    display: block;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+.faq-accordion__item {
+    height: auto;
+    margin-top: 20px;
+    border-bottom: solid 1px var(--paragraph-color);
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.faq-accordion__title {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Archivo', sans-serif;
+    color: var(--title-color);
+    display: flex;
+    align-items: center;
+}
+
 .faq-accordion__text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--paragraph-color);
+    padding-top: 20px;
+}
+
+.faq-accordion__title::after {
+    content: "+";
+    margin-left: auto;
+}
+
+.faq-accordion__item[open] .faq-accordion__title::after {
+    content: "-";
+    margin-left: auto;
+}
+
+.faq-accordion__item[open] .faq-accordion__text {
+    display: block;
+}
+
+.faq-features__list ul {
+    list-style: none;
+}
+
+.faq-features__item {
+    display: flex;
+    padding-top: 40px;
+}
+
+.faq-features__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.faq-features__description {
+    font-size: 16px;
+    color: var(--paragraph-color);
+}
+
+.faq-features__img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .faq {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .faq-header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .faq-contact {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .faq-accordion {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .faq-features {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .faq__title {
+        font-size: 42px; 
+    }
+
+    .faq-features__img {
+        width: 40px;
+        margin-right: 20px;
+    }
 }
