@@ -12,7 +12,7 @@ const examples = [
         alt: "bedroom-design",
         name: "Master Bedroom",
         description: "A master bedroom is a place of solitude and relaxation for any couple. Our clients love pastel shades, so we offered them this delicate project with textile elements, a king-size bed, and nice pouffes.",
-        image: "img/first-work-of-ours-example.jpg",
+        image: "img/second-work-of-ours-example.jpg",
         benefits: ["Bed upholstered in white leather;", "White bedside tables;", "Clouds-like poufs with feathers."]
     },
     {

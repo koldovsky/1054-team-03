@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 20px;
 }
 
 .faq__title {
@@ -124,5 +123,14 @@
     .faq-features {
         grid-column: 2;
         grid-row: 2;
+    }
+
+    .faq__title {
+        font-size: 42px; 
+    }
+
+    .faq-features__img {
+        width: 40px;
+        margin-right: 20px;
     }
 }

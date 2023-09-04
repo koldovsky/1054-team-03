@@ -1,0 +1,139 @@
+.new-products {
+    margin: auto;
+}
+
+.new-products__info {
+    margin-top: 90px;
+}
+
+.new-products__number {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--subtitle-color);
+    text-align: center;
+}
+
+.new-products__title {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--title-color);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.new-products__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--subtitle-color);
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+.new-products__tabs-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.tab__head-link {
+    padding: 15px 20px;
+    color: var(--tabs-color);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+}
+
+.tab__head-link:hover {
+    color: var(--link-text-color);
+    text-decoration: underline;
+}
+
+.tab-item__title {
+    margin-top: 8px;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.tab-item__price-section {
+    display: flex;
+    align-items: center;
+}
+
+.tab-discount {
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--discount-text-color);
+    text-decoration: line-through;
+}
+
+.price-section__actual-price {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--link-text-color);
+}
+
+.item_add {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--footer-title-text);
+    padding: 15px 20px;
+    background-color: var(--link-text-color);
+    border: none;
+}
+
+.item_add:hover {
+    background-color: var(--link-accent-color);
+}
+
+.sofa__tab-content-container {
+    padding-top: 30px; /* it's temproary, later remove to margin*/
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 0 24px;
+}
+
+.dressers__tab-content-container {
+    padding-top: 30px; /* it's temproary, later remove to margin*/
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 0 24px;
+}
+
+.chairs__tab-content-container {
+    padding-top: 30px; /* it's temproary, later remove to margin*/
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 0 24px;
+}
+
+@media (min-width: 768px) {
+    .sofa__tab-content-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .dressers__tab-content-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .chairs__tab-content-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .sofa__tab-content-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .dressers__tab-content-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .chairs__tab-content-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
