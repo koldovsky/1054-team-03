@@ -1,12 +1,14 @@
-<section class="subscription">
-    <img src="img/subscription/subscription-back.jpg" alt="subscription-back" class="subscription__background" width="400">
+<section class="subscription__container">
     <div class="subscription__card">
         <p class="subscription-card__number">// 07. //</p>
-        <h3 class="subscription-card__title">Subscribe to Our Newsletter</h3>
-        <p class="subscription-card__discount-text">and get a 7% discount on your next order!</p>
-        <div class="subscription-card__interaction">
-            <input type="email" placeholder="Email" class="subscription-card__email">
-            <button>Submit</button>
-        </div>       
+        <h1 class="subscription-card__title">Subscribe to Our Newsletter</h1>
+        <p class="subscription-card__discount-text">and get a <u><i>7% discount</i></u> on your next order!</p>
+        <form id="form" class="suscription-form" action="#">
+            <input type="text" id="email" placeholder="Email" class="subscription-card__email">
+            <div id="error-msg-id" class="error-msg"></div>
+            <button type="submit" class="subscription-card__submit-btn">
+                <span class="submit-btn-text">Submit</span>
+            </button>
+        </form>
     </div>
 </section>

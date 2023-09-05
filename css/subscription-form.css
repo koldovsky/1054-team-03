@@ -1,0 +1,134 @@
+.subscription__container {
+    max-width: 100%;
+    height: 80vh;
+    background-image: url(../img/subscription/subscription-back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(80%);
+    opacity: 0.9;
+}
+
+.subscription__card {
+    position: relative;
+    background-color: rgba(56, 56, 56, 0.868);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5 10em);
+    justify-items: center;
+    padding: 35px;
+    margin-bottom: 100px;
+}
+
+.subscription-card__number {
+    color: var(--light-text-accent-color);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin: 20px;
+}
+
+.subscription-card__title {
+    color: var(--light-text-accent-color);
+    align-self: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.subscription-card__discount-text {
+    color: var(--light-text-accent-color);
+    align-self: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.suscription-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-card__email {
+    padding: 14px;
+    margin-bottom: 20px;
+    background-color: rgba(108, 112, 115, 0.497);
+    color: rgb(255, 255, 255);
+    border: none;
+    justify-self: stretch;
+    font-size: 16px;
+}
+
+.subscription-card__email::placeholder {
+    color: aliceblue;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.error-msg {
+    margin-bottom: 20px;
+    color: rgb(243, 52, 52);
+}
+
+.subscription-card__submit-btn {
+    position: relative;
+    height: 43px;
+    padding: 10px;
+    background-color: var(--button-hover-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.submit-btn-text {
+    font-size: 17px;
+    color: var(--light-text-accent-color);
+}
+
+.btn-loading .btn-text {
+    visibility: hidden;
+}
+
+.btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border: 3px solid transparent;
+    border-top-color: aliceblue;
+    border-left-color: aliceblue;
+    border-right-color: aliceblue;
+    border-radius: 50%;
+    animation: btn-loading-spinner 1s linear infinite;
+}
+
+@keyframes btn-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.subscription-card__submit-btn:hover {
+    background-color: var(--light-text-accent-color);
+    color: var(--title-color);
+}
+
+@media screen and (max-width: 600px){
+    .subscription__card{
+        margin: 0 20px 0 20px;
+    }
+}
