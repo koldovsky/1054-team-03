@@ -110,9 +110,23 @@ const products = [
 ];
 
 const tabProducts = document.querySelector(".tab-products");
+const filterBtns = document.querySelectorAll('.filter-btn');
 
+// load products
 window.addEventListener("DOMContentLoaded", function () {
     displayProductItems(products);
+});
+// filter products
+filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+        const category = e.currentTarget.dataset.id;
+        const productsCategory = products.filter(function (productItem) {
+            if (productItem.category === category) {
+                return productItem;
+            }
+        });
+        comsole.log(productsCategory);
+    });
 });
 
 function displayProductItems(productItems) {
