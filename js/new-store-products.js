@@ -12,7 +12,7 @@ const products = [
         id: 2,
         title: "Bubbles Sofa",
         category: "Sofas",
-        discount: none,
+        discount: NaN,
         price: 310.00,
         img: "./img/new-products/sofas/bubbles-sofa.jpg",
         badge: ""
@@ -21,7 +21,7 @@ const products = [
         id: 3,
         title: "Delar Sofa",
         category: "Sofas",
-        discount: none,
+        discount: NaN,
         price: 350.00,
         img: "./img/new-products/sofas/delar-sofa.jpg",
         badge: "New"
@@ -30,7 +30,7 @@ const products = [
         id: 4,
         title: "Angela Sofa",
         category: "Sofas",
-        discount: none,
+        discount: NaN,
         price: 300.00,
         img: "./img/new-products/sofas/angela-sofa.jpg",
         badge: ""
@@ -39,7 +39,7 @@ const products = [
         id: 5,
         title: "Donna Bedside Table",
         category: "Dressers",
-        discount: none,
+        discount: NaN,
         price: 150.00,
         img: "./img/new-products/dressers/donna-table.jpg",
         badge: ""
@@ -57,7 +57,7 @@ const products = [
         id: 7,
         title: "Fusion Dresser",
         category: "Dressers",
-        discount: none,
+        discount: NaN,
         price: 320.00,
         img: "./img/new-products/dressers/fusion-dresser.jpg",
         badge: ""
@@ -66,7 +66,7 @@ const products = [
         id: 8,
         title: "Upi Bedside Table",
         category: "Dressers",
-        discount: none,
+        discount: NaN,
         price: 110.00,
         img: "./img/new-products/dressers/upi-table.jpg",
         badge: "Limited"
@@ -75,7 +75,7 @@ const products = [
         id: 9,
         title: "Arona Armchair",
         category: "Chairs",
-        discount: none,
+        discount: NaN,
         price: 199.00,
         img: "./img/new-products/chairs/arona.jpg",
         badge: "Bestseller"
@@ -84,7 +84,7 @@ const products = [
         id: 10,
         title: "Fusion Chair",
         category: "Chairs",
-        discount: none,
+        discount: NaN,
         price: 100.00,
         img: "./img/new-products/sofas/fusion.jpg",
         badge: ""
@@ -93,7 +93,7 @@ const products = [
         id: 11,
         title: "Lora Armchair",
         category: "Chairs",
-        discount: none,
+        discount: NaN,
         price: 290.00,
         img: "./img/new-products/sofas/lora.jpg",
         badge: ""
@@ -107,4 +107,31 @@ const products = [
         img: "./img/new-products/sofas/barr.jpg",
         badge: "Sale"
     },
-]
+];
+
+const tabProducts = document.querySelector(".tab-products");
+
+window.addEventListener("DOMContentLoaded", function () {
+    displayProductItems(products);
+});
+
+function displayProductItems(productItems) {
+    let displayProducts = productItems.map(function (item) {
+
+        return `<article class="tab-content-container_item">
+        <div class="item_img">
+            <img src="${item.img}" alt="${item.title}" class="item_logo">
+        </div>
+        <div class="tab-item__info-interaction">
+            <p class="tab-item__title">${item.title}</p>
+            <div class="tab-item__price-section">
+                <p class="price-section__old-price tab-discount">$${item.discount}USD</p>
+                <p class="price-section__actual-price">$${item.price}USD</p>
+            </div>
+            <button class="item_add">Add to Cart</button>
+        </div>
+    </article>`;
+    });
+    displayProducts = displayProducts.join("");
+    tabProducts.innerHTML = displayProducts;
+}
