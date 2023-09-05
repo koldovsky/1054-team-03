@@ -3,4 +3,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./best-selling.js');
     import('./header.js');
     import('./news-subscription.js');
+    import('./new-store-products.js');
 });
