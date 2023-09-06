@@ -18,7 +18,7 @@ const products = [
         id: 2,
         title: "Bubbles Sofa",
         category: "Sofas",
-        discount: NaN,
+        discount: 400.00,
         price: 310.00,
         img: "./img/new-products/sofas/bubbles-sofa.jpg",
         badge: "",
@@ -33,7 +33,7 @@ const products = [
         id: 3,
         title: "Delar Sofa",
         category: "Sofas",
-        discount: NaN,
+        discount: 399.00,
         price: 350.00,
         img: "./img/new-products/sofas/delar-sofa.jpg",
         badge: "New",
@@ -48,7 +48,7 @@ const products = [
         id: 4,
         title: "Angela Sofa",
         category: "Sofas",
-        discount: NaN,
+        discount: 380.00,
         price: 300.00,
         img: "./img/new-products/sofas/angela-sofa.jpg",
         badge: "",
@@ -63,7 +63,7 @@ const products = [
         id: 5,
         title: "Donna Bedside Table",
         category: "Dressers",
-        discount: NaN,
+        discount: 260.00,
         price: 150.00,
         img: "./img/new-products/dressers/donna-table.jpg",
         badge: "",
@@ -93,7 +93,7 @@ const products = [
         id: 7,
         title: "Fusion Dresser",
         category: "Dressers",
-        discount: NaN,
+        discount: 430.00,
         price: 320.00,
         img: "./img/new-products/dressers/fusion-dresser.jpg",
         badge: "",
@@ -108,7 +108,7 @@ const products = [
         id: 8,
         title: "Upi Bedside Table",
         category: "Dressers",
-        discount: NaN,
+        discount: 220.00,
         price: 110.00,
         img: "./img/new-products/dressers/upi-table.jpg",
         badge: "Limited",
@@ -123,7 +123,7 @@ const products = [
         id: 9,
         title: "Arona Armchair",
         category: "Chairs",
-        discount: NaN,
+        discount: 299.00,
         price: 199.00,
         img: "./img/new-products/chairs/arona.jpg",
         badge: "Bestseller",
@@ -138,9 +138,9 @@ const products = [
         id: 10,
         title: "Fusion Chair",
         category: "Chairs",
-        discount: NaN,
+        discount: 210.00,
         price: 100.00,
-        img: "./img/new-products/sofas/fusion.jpg",
+        img: "./img/new-products/chairs/fusion.jpg",
         badge: "",
         description: `It is an incredibly stylish chair in a trendy deep blue colour. In it, you can recline comfortably and read a book or work on a laptop.`,
         dimensions: '25" x 32"',
@@ -153,9 +153,9 @@ const products = [
         id: 11,
         title: "Lora Armchair",
         category: "Chairs",
-        discount: NaN,
+        discount: 350.00,
         price: 290.00,
-        img: "./img/new-products/sofas/lora.jpg",
+        img: "./img/new-products/chairs/lora.jpg",
         badge: "",
         description: `Simple design and vibrant green colour are the hallmarks of this armchair. It is versatile: you can make this armchair a striking accent in your interior or create an island of tranquillity in your office.`,
         dimensions: '28" x 35"',
@@ -170,7 +170,7 @@ const products = [
         category: "Chairs",
         discount: 110.00,
         price: 100.00,
-        img: "./img/new-products/sofas/barr.jpg",
+        img: "./img/new-products/chairs/barr.jpg",
         badge: "Sale",
         description: `This designer chair is made from a combination of textiles and natural wood. The chair fits perfectly into a high-tech or minimalist living room.`,
         dimensions: '26" x 33"',
@@ -188,31 +188,30 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 window.addEventListener("DOMContentLoaded", function () {
     displayProductItems(products);
 });
+
 // filter products
 filterBtns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
         const category = e.currentTarget.dataset.id;
         const productsCategory = products.filter(function (productItem) {
-            if (productItem.category === category) {
-                return productItem;
-            }
+            return productItem.category === category;
         });
-        comsole.log(productsCategory);
+        console.log(productsCategory);
+        displayProductItems(productsCategory); // Відобразити фільтровані товари
     });
 });
 
 function displayProductItems(productItems) {
     let displayProducts = productItems.map(function (item) {
-
         return `<article class="tab-content-container_item">
         <div class="item_img">
             <img src="${item.img}" alt="${item.title}" class="item_logo">
         </div>
         <div class="tab-item__info-interaction">
-            <p class="tab-item__title">${item.title}</p>
+        <a href="#"><p class="tab-item__title">${item.title}</p></a>
             <div class="tab-item__price-section">
-                <p class="price-section__old-price tab-discount">$${item.discount}USD</p>
-                <p class="price-section__actual-price">$${item.price}USD</p>
+                <p class="price-section__old-price tab-discount">$${item.discount} USD</p>
+                <p class="price-section__actual-price">$${item.price} USD</p>
             </div>
             <button class="item_add">Add to Cart</button>
         </div>
