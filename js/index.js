@@ -5,4 +5,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./news-subscription.js');
     import('./new-store-products.js');
     import('./faq.js');
+    import('./turnkey-furnishing.js');
 });
