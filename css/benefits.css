@@ -29,6 +29,8 @@
 }
 .benefits__cards {
     background-color: var(--benefits-background-color);
+    align-content: center;
+    margin: auto;
     padding: 10px;
 }
 .benefits__cards-title {
@@ -85,10 +87,11 @@
         grid-gap: 20px;
     }
 }
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
     .benefits__cards {
+        max-width: 1200px;
         grid-template-columns: repeat(4, 1fr);
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 20px;       
     }
 }
