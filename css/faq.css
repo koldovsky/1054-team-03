@@ -1,6 +1,6 @@
 .faq {
     background-color: var(--faq-background-color);
-    padding: 90px 24px;
+    padding: 30px 24px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -10,7 +10,7 @@
     font-size: 34px;
     font-weight: 700;
     color: var(--title-color);
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .faq__description {
@@ -23,7 +23,7 @@
 .faq-contact__text {
     font-size: 16px;
     color: var(--paragraph-color);
-    padding: 40px 0 20px 0;
+    padding: 10px 0 20px 0;
 }
 
 .faq-contact__link {
