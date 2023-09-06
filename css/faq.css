@@ -1,6 +1,6 @@
 .faq {
     background-color: var(--faq-background-color);
-    padding: 30px 24px;
+    padding: 70px 24px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -135,3 +135,15 @@
         margin-right: 20px;
     }
 }
+
+.clock {
+    padding: 0;
+    font-size: 16px;
+    color: var(--paragraph-color);
+    font-weight: bold;
+  }
+  
+  .faq__working-hours-text {
+    font-size: 16px;
+    color: var(--paragraph-color);
+  }
