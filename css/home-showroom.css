@@ -29,16 +29,16 @@
     font-size: 18px;
     align-self: start;
 }
-/* .content__text {
+.content__text {
     color: var(--paragraph-color);
     font-size: 16px;
     align-self: start;
-} */
-/* .content__second-title {
+}
+.content__second-title {
     color: var(--paragraph-color);
     font-size: 25px;
     align-self: start;
-} */
+}
 /* .home-showroom__img {
     padding: 0 15px;
 } */
