@@ -13,22 +13,22 @@
     padding: 0 15px;
     align-items: end;
 }
-/* .content__number {
+.content__number {
     color: var(--subtitle-color);
     font-size: 12px;
     align-self: start;
     margin-top: 20px;
-} */
-/* .content__title {
+}
+.content__title {
     color: var(--title-color);
     font-size: 40px;
     align-self: start;
-} */
-/* .content__subtitle {
+}
+.content__subtitle {
     color: var(--subtitle-color);
     font-size: 18px;
     align-self: start;
-} */
+}
 /* .content__text {
     color: var(--paragraph-color);
     font-size: 16px;
