@@ -104,7 +104,7 @@
     }
 }
 
-/* @media screen and (max-width: 620px) {
+@media screen and (max-width: 620px) {
     .home-showroom {
         padding-top: 65px;
     }
@@ -112,4 +112,4 @@
     .home-showroom__img {
         margin-bottom: 20px;
     }
-} */
+}
