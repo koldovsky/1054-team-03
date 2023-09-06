@@ -1,0 +1,115 @@
+.home-showroom {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 25px 120px 25px;
+}
+.home-showroom__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 0 50px 0;
+}
+/* .home-showroom-container__content {
+    display: grid;
+    padding: 0 15px;
+    align-items: end;
+} */
+/* .content__number {
+    color: var(--subtitle-color);
+    font-size: 12px;
+    align-self: start;
+    margin-top: 20px;
+} */
+/* .content__title {
+    color: var(--title-color);
+    font-size: 40px;
+    align-self: start;
+} */
+/* .content__subtitle {
+    color: var(--subtitle-color);
+    font-size: 18px;
+    align-self: start;
+} */
+/* .content__text {
+    color: var(--paragraph-color);
+    font-size: 16px;
+    align-self: start;
+} */
+/* .content__second-title {
+    color: var(--paragraph-color);
+    font-size: 25px;
+    align-self: start;
+} */
+/* .home-showroom__img {
+    padding: 0 15px;
+} */
+
+/* @media screen and (max-width: 999px) {
+    .content__title {
+        margin-bottom: 15px;
+    }
+
+    .content__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .content__text {
+        margin: 15px 0 15px 0;
+    }
+} */
+
+/* @media screen and (max-width: 899px) {
+    .home-showroom {
+        padding-top: 100px;
+    }
+
+    .content__title {
+        margin-bottom: 15px;
+    }
+
+    .content__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .content__text {
+        margin: 10px 0 20px 0;
+    }
+} */
+
+/* @media screen and (max-width: 799px) {
+    .home-showroom {
+        padding-top: 80px;
+    }
+
+    .content__title {
+        margin-bottom: 15px;
+    }
+
+    .content__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .content__text {
+        margin: 10px 0 20px 0;
+    }
+} */
+
+/* @media screen and (max-width: 770px) {
+    .home-showroom {
+        padding-top: 70px;
+    }
+
+    .home-showroom__container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+} */
+
+/* @media screen and (max-width: 620px) {
+    .home-showroom {
+        padding-top: 65px;
+    }
+
+    .home-showroom__img {
+        margin-bottom: 20px;
+    }
+} */
