@@ -127,7 +127,7 @@
     }
 
     .faq__title {
-        font-size: 42px; 
+        font-size: 42px;
     }
 
     .faq-features__img {
@@ -141,13 +141,13 @@
     font-size: 16px;
     color: var(--paragraph-color);
     font-weight: bold;
-  }
-  
-  .faq__working-hours-text {
+}
+
+.faq__working-hours-text {
     font-size: 16px;
     color: var(--paragraph-color);
-  }
+}
 
-  .nobr {
+.nobr {
     white-space: nowrap;
-  }
+}
