@@ -81,6 +81,11 @@
 
 @media screen  and (min-width:999px){
     .clients__list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen  and (min-width:1199px){
+    .clients__list{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
