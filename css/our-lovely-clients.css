@@ -53,11 +53,12 @@
 .clients__link-underline{
     text-decoration: underline;
 }
-@media screen and (min-width:750px) {
+
+@media screen and (min-width:480px) {
     .clients__list{
         margin: 40px 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
     .clients li{
@@ -70,5 +71,16 @@
     .clients img{
         width: 160px;
         height: 55px;
+    }
+}
+@media screen  and (min-width:750px){
+    .clients__list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen  and (min-width:999px){
+    .clients__list{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
