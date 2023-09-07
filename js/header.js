@@ -1,5 +1,5 @@
 const burgerIcon = document.getElementById("burgerIcon");
-const modal = document.getElementById("modal");
+const modal = document.getElementById("hamb_modal");
 
 function closeModal() {
   if (window.innerWidth > 990) {
